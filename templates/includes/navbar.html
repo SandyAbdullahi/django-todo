@@ -1,11 +1,12 @@
 <nav class="navbar navbar-expand navbar-light bg-light">
     <div class="nav navbar-nav ml-auto">
         {% if user.is_authenticated %}
-            <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+        <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+        <a class="nav-item nav-link" href="{% url 'password_change' %}">Change Password</a>
         {% else %}
-            <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+        <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
         {% endif %}
-        
+
         <a class="nav-item nav-link" href="{% url 'landing' %}">Home</a>
 
         <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
