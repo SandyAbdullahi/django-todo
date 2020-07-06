@@ -14,4 +14,8 @@ def ABOUT(request):
 
 
 def NEW_USER(request):
-    return render(request, 'pages/about.html')
+    form = UserCreationForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'registration/sign_up.html', context)

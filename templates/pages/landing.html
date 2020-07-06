@@ -10,6 +10,7 @@
     <div class="container">
         <h3>There are currently<span class="bg-info m-2 p-2 text-white font-weight-bold">{{ count }}</span>users registered</h3>
         <hr>
+        <a href="{% url 'sign_up' %}" class="btn btn-success">New User</a>
     </div>
 </div>
 {% endblock  %}
