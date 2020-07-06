@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def LANDING(request):
+    return render(request, 'pages/landing.html')
+
+def ABOUT(request):
+    return render(request, 'pages/about.html')
