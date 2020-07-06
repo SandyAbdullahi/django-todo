@@ -1,6 +1,9 @@
+
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+
 
 def LANDING(request):
     count = User.objects.count()
@@ -25,3 +28,12 @@ def NEW_USER(request):
             'form': form
         }
     return render(request, 'registration/sign_up.html', context)
+
+
+@login_required
+def DASHBOARD(request):
+    user = User.objects.all()
+    context = {
+        'users': user
+    }
+    return render(request, 'pages/dashboard.html', context)
