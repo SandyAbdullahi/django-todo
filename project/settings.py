@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     #declare app here:
     'project.todo',
-    'bootstrap4'
+    'bootstrap4',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
