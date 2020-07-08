@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
 h1 {
+    font-family: 'Open Sans', sans-serif;
     color: dodgerblue;
     font-weight: 900;
 }
@@ -6,13 +9,61 @@ h1 {
 
 .landing {
     padding: 10%;
+    margin-bottom: 15rem;
 }
 
 .dashboard {
     padding: 5%;
+    margin-bottom: 15rem;
+}
+
+.about {
+    padding: 5%;
+    margin-bottom: 25rem;
 }
 
 #div_id_user {
     display: none;
     background-color: #aaa !important;
+}
+
+.lists {
+
+    color: #fff !important;
+}
+
+.lists:hover {
+    background-color: dodgerblue !important;
+}
+
+.list-view {
+    padding: 5%;
+    margin-bottom: 25rem;
+}
+
+
+p, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+
+    text-decoration: none !important;
+    
+}
+
+
+textarea {
+    height: 50% !important;
+    width: 85% !important;
+}
+
+
+
+footer {
+    position: static;
+    bottom: 0rem;
+    width: 100%;
 }

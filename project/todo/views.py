@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .forms import ListForm
+from .models import List
 
 
 def LANDING(request):
@@ -45,7 +46,35 @@ def DASHBOARD(request):
     else:
         new_list_form = ListForm(initial={"user":user_id})
 
+
+
     context = {
         'form': new_list_form
     }
     return render(request, 'pages/dashboard.html', context)
+
+@login_required
+def UPDATE_LIST(request, list_id):
+    list_id = int(list_id)
+    try:
+        selected_list = List.objects.get(id = list_id)
+    except List.DoesNotExist:
+        return redirect('dashboard')
+    list_form = ListForm(request.POST or None, instance = selected_list)     
+    if list_form.is_valid():
+        list_form.save()
+        list_form.clean()
+        return redirect('dashboard')
+    context = {
+        'form': list_form
+    }
+    return render(request, 'pages/list_view.html', context)
+
+def DELETE_LIST(request, list_id):
+    list_id = int(list_id)
+    try:
+        selected_list = List.objects.get(id = list_id )
+    except List.DoesNotExist:
+        return redirect('landing')
+    selected_list.delete()
+    return redirect('dashboard')

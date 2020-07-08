@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class List(models.Model):
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     list_name = models.CharField(max_length=100)
-    list_description = models.TextField()
+    list_description = models.TextField(blank=True)
     
 
     class Meta:
