@@ -11,3 +11,8 @@ h1 {
 .dashboard {
     padding: 10%;
 }
+
+#div_id_user {
+    display: none;
+    background-color: #aaa !important;
+}
