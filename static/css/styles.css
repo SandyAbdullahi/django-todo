@@ -158,3 +158,14 @@ a {
     
 
 }
+
+
+@media (min-width: 1200px) {
+    .landing {
+        background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center;
+    }
+
+    .landing .content {
+        padding: 9rem 0rem;
+    }
+}
