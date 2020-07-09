@@ -8,45 +8,54 @@
 
 
 <div class="dashboard text-center">
-    <div class="container-fluid">
-        <h1>Welcome {{ user }}, to your Dashboard </h1>
-        <hr>
+    <div class="content">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    
-                            <form method="POST">
-                                {% csrf_token %}
-                                {{ form|crispy }}
-                                <button type="submit" class="m-2 btn btn-primary">Submit</button>
-                            </form>
-                    
-                </div>
-
-                <div class="col-lg-6">
-
-
-                    {% for list in user.list_set.all %}
-                    <a href="update_list/{{list.id}}">
+        <div class="container-fluid">
+            <h1>Welcome <span class="user">{{ user }}</span>, to your Dashboard </h1>
+            <hr>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
                         
-                    <div class="list-name p-3 border rounded bg-secondary">
-            
-                      
-                                <h4 class="text-white">{{ list.list_name }}</h4>
-                                <p class="text-white">{{ list.list_description }}</p>
-                                <a class="btn btn-danger" href="/delete_list/{{ list.id }}/" role="button">Delete</a>
-                       
-            
-            
-                        </div>
-                    </a>
-                    {% endfor %}
-
-                </div>
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <button type="submit" class="m-2 btn btn-primary">Submit</button>
+                                </form>
+                        
+                    </div>
+    
+                    <div class="col-lg-6">
+    
+    
+                        {% for list in user.list_set.all %}
+                        <a href="update_list/{{list.id}}">
+                            
+                        <div class="list-name p-3 border rounded bg-secondary">
                 
+                          
+                                    <h4 class="text-white">{{ list.list_name }}</h4>
+                                    <p class="text-white">{{ list.list_description }}</p>
+                                    <a class="btn btn-danger" href="/delete_list/{{ list.id }}/" role="button">Delete</a>
+                           
+                
+                
+                            </div>
+                        </a>
+                        {% endfor %}
+    
+                    </div>
+                    
+                </div>
             </div>
-        </div>
+
+
+
+    </div>    
+
+
+
 
 
 

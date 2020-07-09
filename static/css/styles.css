@@ -220,7 +220,46 @@ base colors:
 }
 
 
+/* Logged-out page */
 
+.logged-out {
+    background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center; 
+    background-size: cover;  
+}
+
+
+.logged-out .content {
+    background-color: #388697d1;
+    padding: 15rem 0rem;
+}
+
+.logged-out h1 {
+    color: #ffffff;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    background-color: #CC2936;
+}
+
+.dashboard .content {
+    padding: 10rem 0rem;
+}
+
+.dashboard .content h1 {
+    color: #ffffff;
+}
+.dashboard .content h1 .user {
+    color: #388697;
+    text-transform: capitalize;
+}
+
+.dashboard .content form label {
+    color: #ffffff;
+    font-size: 2rem;
+}
 
 footer {
     width: 100%;
