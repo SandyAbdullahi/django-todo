@@ -244,8 +244,9 @@ base colors:
     background-color: #CC2936;
 }
 
+
 .dashboard .content {
-    padding: 10rem 0rem;
+    padding: 9rem 0rem 20rem 0rem;
 }
 
 .dashboard .content h1 {
@@ -256,6 +257,9 @@ base colors:
     text-transform: capitalize;
 }
 
+.dashboard .content form {
+    line-height: 1;
+}
 .dashboard .content form label {
     color: #388697;
     font-size: 2rem;
@@ -329,6 +333,10 @@ a {
         padding: 20rem 0rem;
     }
 
+    .dashboard .content {
+        padding: 9rem 0rem 25rem 0rem;
+    }
+    
     textarea {
         width: 90% !important;
     }
@@ -363,6 +371,9 @@ a {
     .about .content {
         padding: 9rem 0rem;
     }
+    .dashboard .content {
+        padding: 9rem 0rem 20rem 0rem;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -381,5 +392,9 @@ a {
 
     .landing p {
        color: #08415C;
+    }
+
+    .dashboard .content {
+        padding: 9rem 0rem 30rem 0rem;
     }
 }
