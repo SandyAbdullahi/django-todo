@@ -33,6 +33,8 @@ base colors:
 
 
 
+/* NAVBAR */
+
 .my-nav-style {
     background-color: #08415C;
 }
@@ -62,6 +64,8 @@ base colors:
 }
 
 
+/* LANDING PAGE */
+
 
 .landing {
     background: url('../img/payton-tuttle-5wb5-FhQ0M8-unsplash.jpg') no-repeat center;
@@ -90,6 +94,37 @@ base colors:
     border: 1px solid #CC2936 !important;;
     background-color:  #CC2936 !important;
 }
+
+
+/* REGISTER */
+
+.register {
+    background-color: #388697;
+    padding: 7rem 0rem;
+}
+
+.register h1 {
+    margin: 1.2rem;
+    color: #08415C;
+}
+
+
+
+.register form {
+    color: #ffffff;
+}
+
+.register form label {
+    font-size: 1.5rem !important;
+}
+
+.register form ul {
+    font-size: 0.8rem;
+    color: #CC2936;
+    text-align: left !important;
+}
+
+
 
 
 
