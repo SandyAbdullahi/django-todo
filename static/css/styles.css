@@ -166,10 +166,17 @@ a {
     }
 
     .landing .content {
-        padding: 9rem 0rem;
+        padding: 20rem 0rem;
     }
 }
 
+
+
+@media (min-width: 1366px) {
+    .landing .content {
+        padding: 9rem 0rem;
+    }
+}
 
 @media (min-width: 1400px) {
     .landing {
@@ -179,5 +186,9 @@ a {
     .landing .content {
         padding: 20rem 0rem;
         background-color: #cc293670;
+    }
+
+    .landing p {
+       color: #08415C;
     }
 }
