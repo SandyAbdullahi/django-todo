@@ -138,6 +138,18 @@ a {
 
 
 @media (min-width: 768px)  {
+    .landing {
+        background: url('../img/desk-3076954_1920.jpg') no-repeat center;
+        background-size: cover;
+        height: 100%;
+        
+    }
+    
+    .landing .content {
+        padding: 20rem 0rem;
+    }
+
+
     textarea {
         width: 90% !important;
     }
