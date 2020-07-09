@@ -42,6 +42,13 @@ base colors:
 
 
 
+.landing {
+    background: url('../img/payton-tuttle-5wb5-FhQ0M8-unsplash.jpg') no-repeat center;
+    background-size: 35rem;
+    padding: 15rem 0rem;
+    color: #CC2936;
+}
+
 
 
 
@@ -68,10 +75,6 @@ a {
 }
 
 
-
-.landing {
-    padding-top: 15%;
-}
 
 .list-name {
     background-color: #787c7f;
