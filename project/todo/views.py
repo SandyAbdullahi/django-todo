@@ -27,9 +27,9 @@ def NEW_USER(request):
             return redirect('login')
     else:
         form = UserCreationForm()
-        context = {
-            'form': form
-        }
+    context = {
+        'form': form
+    }
     return render(request, 'registration/sign_up.html', context)
 
 

@@ -4,6 +4,13 @@
 
 {% block content %}
 <div class="list-view container p-5 ">
+    <hr>
+    <div class="container-fluid text-center">
+        <a href="{% url 'dashboard' %}" class="btn btn-primary text-center" type="button">
+            Back to Dashboard
+          </a>
+    </div>
+    <hr>
    <h1 class="text-center">{{ list.list_name }}</h1>
 <p>
     <div class="container text-center">
