@@ -125,6 +125,37 @@ base colors:
 }
 
 
+/* LOGIN */
+
+.login {
+    background-color: #388697;
+    padding: 14rem 0rem;
+}
+
+.login h1 {
+    margin: 1.2rem;
+    color: #08415C;
+}
+
+
+
+.login form {
+    color: #ffffff;
+}
+
+.login form label {
+    font-size: 1.5rem !important;
+}
+
+.login form ul {
+    font-size: 0.8rem;
+    color: #CC2936;
+    text-align: left !important;
+}
+
+
+
+
 
 
 
