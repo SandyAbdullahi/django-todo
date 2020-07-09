@@ -99,9 +99,16 @@ base colors:
 /* REGISTER */
 
 .register {
-    background-color: #388697;
+    background: url('../img/clouds-3467281_1920.jpg') no-repeat center; 
+    background-size: cover;  
+}
+
+
+.register .content {
+    background-color: #38869791;
     padding: 7rem 0rem;
 }
+
 
 .register h1 {
     margin: 1.2rem;
@@ -159,6 +166,20 @@ base colors:
     text-align: left !important;
 }
 
+.about{
+    background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center; 
+    background-size: cover;  
+}
+
+
+.about .content {
+    background-color: #388697d1;
+    padding: 11rem 0rem;
+}
+
+.about h1 {
+    color: #ffffff;
+}
 
 
 
@@ -226,6 +247,10 @@ a {
         background-color: #38869791;
         padding: 20rem 0rem;
     }
+    .about .content {
+        background-color: #38869791;
+        padding: 20rem 0rem;
+    }
     
 
 
@@ -247,12 +272,20 @@ a {
     .landing .content {
         padding: 20rem 0rem;
     }
+    .about .content {
+        background-color: #38869791;
+        padding: 20rem 0rem;
+    }
 }
 
 
 
 @media (min-width: 1366px) {
     .landing .content {
+        padding: 9rem 0rem;
+    }
+
+    .about .content {
         padding: 9rem 0rem;
     }
 }
@@ -265,6 +298,10 @@ a {
     .landing .content {
         padding: 20rem 0rem;
         background-color: #cc293670;
+    }
+    .about .content {
+        background-color: #38869791;
+        padding: 20rem 0rem;
     }
 
     .landing p {
