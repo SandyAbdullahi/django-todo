@@ -171,12 +171,13 @@ a {
 }
 
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
     .landing {
         background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center;
     }
 
     .landing .content {
         padding: 20rem 0rem;
+        background-color: #cc293670;
     }
 }
