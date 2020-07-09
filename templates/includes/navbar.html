@@ -1,8 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="my-nav-style navbar navbar-expand-lg fixed-top">
   {% comment %} <a class="navbar-brand" href="#">Navbar</a> {% endcomment %}
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+{% if user.is_authenticated %}
+
+{% else %}
+  <a class="btn  btn-outline-success" href="{% url 'sign_up' %}" role="button">Register</a>
+
+{% endif %}
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">

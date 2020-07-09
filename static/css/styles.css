@@ -3,6 +3,51 @@
     display: none;
 }
 
+/*  
+base colors:
+1. INDIGO DYE: #08415C
+2. MADDER LAKE: #CC2936
+3. METALLIC SEAWEED: #388697
+*/
+
+
+
+.my-nav-style {
+    background-color: #08415C;
+}
+
+
+.my-nav-style a {
+    color: #388697 !important;
+}
+
+.my-nav-style a:hover {
+    color: #ffffff !important;
+}
+
+.my-nav-style a.dropdown-item:hover {
+    color: #388697 !important;
+    background-color: #08415C;
+
+}
+
+.navbar-toggler{
+    border:1px solid #388697 !important;
+}
+
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(56,134,151)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     width: 100%;
