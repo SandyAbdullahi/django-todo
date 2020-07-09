@@ -105,7 +105,7 @@ base colors:
 
 
 .register .content {
-    background-color: #38869791;
+    background-color: #388697e8;
     padding: 7rem 0rem;
 }
 
@@ -201,6 +201,10 @@ base colors:
     color: #ffffff;
 }
 
+.password-change form ul {
+    font-size: 0.8rem;
+    text-align: left !important;
+}
 
 /* Password change done */
 
@@ -243,6 +247,14 @@ base colors:
 .dashboard {
     background-color: #CC2936;
 }
+.dashboard small {
+    color: #CC2936;
+}
+
+.dashboard button.btn.btn-primary {
+    background-color: #388697 !important;
+    border: 0px solid #388697 !important;
+}
 
 
 .dashboard .content {
@@ -257,13 +269,113 @@ base colors:
     text-transform: capitalize;
 }
 
+.dashboard .content .card {
+    background-color: #08415C;
+}
+
 .dashboard .content form {
-    line-height: 1;
+    line-height: 1.2;
+}
+.dashboard .content form input {
+    margin: 10px;
 }
 .dashboard .content form label {
-    color: #388697;
+    color: #fff;
     font-size: 2rem;
 }
+
+
+/* List view */
+
+.list-view {
+    background-color: #CC2936;
+}
+
+.list-view h1 {
+    color: #08415C;
+}
+
+.list-view .content {
+ 
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.list-view .content .card {
+    background-color: #08415C;
+
+}
+
+.list-view .content form input {
+    margin: 10px;
+}
+.list-view .content form label {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.list-view button.btn.btn-primary {
+    background-color: #388697 !important;
+    border: 0px solid #388697 !important;
+}
+
+.list-view a.btn.btn-primary {
+    background-color: #388697 !important;
+    border: 0px solid #388697 !important;
+}
+
+
+/* Items */
+
+.item {
+    background-color: #CC2936;
+}
+
+.item h1 {
+    color: #08415C;
+}
+
+.item .content {
+    padding: 0rem 0rem 5rem 0rem;
+}
+
+.item .content .form {
+    background-color: #08415C !important;
+    border-radius: 8px;
+}
+
+.item .content .form h4 {
+    color: #388697 !important;
+}
+
+
+.item .content form {
+
+    margin: auto;
+}
+
+.item .content form input {
+    margin: 10px;
+}
+.item .content form label {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.item button.btn.btn-primary {
+    background-color: #388697 !important;
+    border: 0px solid #388697 !important;
+}
+
+.item a.btn.btn-primary {
+    background-color: #388697 !important;
+    border: 0px solid #388697 !important;
+}
+
+.item .item-name {
+    background-color: #08415C;
+
+}
+
 
 footer {
     width: 100%;
@@ -281,7 +393,8 @@ a {
 
 
 .list-name {
-    background-color: #787c7f;
+    background-color: #08415C;
+
 }
 
 .list-name h4 {
@@ -298,12 +411,10 @@ a {
 
 .list-name:hover {
     cursor: pointer;
-    background-color: dodgerblue !important;
+    background-color: #388697 !important;
 }
 
-.item {
-    margin-bottom: 20rem;
-}
+
 
 
 @media (min-width: 768px)  {
@@ -321,6 +432,11 @@ a {
 
     .login .content {
       
+        padding: 20rem 0rem;
+    }
+
+    .logged-out .content {
+        
         padding: 20rem 0rem;
     }
     .about .content {

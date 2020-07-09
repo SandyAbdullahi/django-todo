@@ -12,7 +12,14 @@
         <div class="container">
             <p>There are currently<span class="m-2 p-2 text-white font-weight-bold">{{ count }}</span>users registered</p>
             <hr>
+
+
+            {% if user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" class="btn btn-success">To Dashboard</a> 
+            {% else %}
             <a href="{% url 'sign_up' %}" class="btn btn-success">Get Started</a>
+   
+            {% endif %}
         </div>
     </div>
 

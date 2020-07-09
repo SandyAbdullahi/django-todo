@@ -5,19 +5,24 @@
 {% block content %}
 <div class="register">
     <div class="content">
-        
+
         <div class="container p-5">
             <h1 class="text-center">Register:</h1>
             <hr class="w-50 mx-auto">
-             <div class="row justify-content-center">
-                 <form method="POST" class="text-center" novalidate>
-                     {% csrf_token %}
-                     {{ form|crispy }}
-                     <button type="submit" class="btn btn-success">Register</button>
-                 </form>
-             </div>
-             <hr class="w-50 mx-auto">
-         </div>
+            <div class="row justify-content-center">
+                <form method="POST" class="text-center" novalidate>
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-success">Register</button>
+                </form>
+            </div>
+            <hr class="w-50 mx-auto">
+            <div class="container text-center mt-2">
+                <p>Already Registered?</p>
+                <a href="{% url 'login' %}" class="btn btn-outline-primary">Login</a>
+
+            </div>
+        </div>
 
     </div>
 </div>
