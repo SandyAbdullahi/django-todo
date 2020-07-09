@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+#div_id_user,#div_id_list {
+    display: none;
+}
+
+
+footer {
+    width: 100%;
+}
+textarea {
+    width: 80% !important;
+}
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -6,64 +17,49 @@ h1 {
     font-weight: 900;
 }
 
+a {
+    color: black;
+    text-decoration: none !important;
+}
+
+
 
 .landing {
-    padding: 10%;
-    margin-bottom: 15rem;
+    padding-top: 15%;
 }
 
-.dashboard {
-    padding: 5%;
-    margin-bottom: 15rem;
+.list-name {
+    background-color: #787c7f;
 }
 
-.about {
-    padding: 5%;
-    margin-bottom: 25rem;
+.list-name h4 {
+    color: #fff;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.list-name p {
+    color: #fff;
+    padding: 0 !important;
+    padding: 0 !important;
 }
 
-#div_id_user {
-    display: none;
-    background-color: #aaa !important;
-}
 
-.lists {
-
-    color: #fff !important;
-}
-
-.lists:hover {
+.list-name:hover {
+    cursor: pointer;
     background-color: dodgerblue !important;
 }
 
-.list-view {
-    padding: 5%;
-    margin-bottom: 25rem;
+.item {
+    margin-bottom: 20rem;
 }
 
 
-p, button {
-    margin: 0;
-    padding: 0;
-}
+@media (min-width: 768px)  {
+    textarea {
+        width: 90% !important;
+    }
 
 
-a {
-
-    text-decoration: none !important;
     
-}
 
-
-textarea {
-    height: 50% !important;
-    width: 85% !important;
-}
-
-
-
-footer {
-    position: static;
-    bottom: 0rem;
-    width: 100%;
 }

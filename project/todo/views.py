@@ -3,8 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .forms import ListForm
-from .models import List
+from .forms import ListForm, ItemForm
+from .models import List, Item
 
 
 def LANDING(request):
@@ -65,8 +65,18 @@ def UPDATE_LIST(request, list_id):
         list_form.save()
         list_form.clean()
         return redirect('dashboard')
+    if request.method == 'POST':
+        new_item_form = ItemForm(request.POST)
+        if new_item_form.is_valid():
+            new_item_form.save()
+            new_item_form.clean()
+            return redirect('update', list_id)
+    else:
+        new_item_form = ItemForm(initial={"list":list_id})
     context = {
-        'form': list_form
+        'list': selected_list,
+        'form': list_form,
+        'new_item': new_item_form
     }
     return render(request, 'pages/list_view.html', context)
 
@@ -78,3 +88,14 @@ def DELETE_LIST(request, list_id):
         return redirect('landing')
     selected_list.delete()
     return redirect('dashboard')
+
+
+def DELETE_ITEM(request, item_id, list_id):
+    list_id = int(list_id)
+    item_id = int(item_id)
+    try:
+        selected_item = Item.objects.get(id = item_id )
+    except List.DoesNotExist:
+        return redirect('dashboard')
+    selected_item.delete()
+    return redirect('update', list_id)
