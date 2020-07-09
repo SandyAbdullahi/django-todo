@@ -26,6 +26,7 @@ SECRET_KEY = 'rhi2y7bh$72c6f5w6a8%4pmipwp+q0k&m9w2)671*dl%w@-(z0'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'radiant-meadow-08175.herokuapp.com'
 ]
 
