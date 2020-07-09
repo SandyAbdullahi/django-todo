@@ -128,7 +128,13 @@ base colors:
 /* LOGIN */
 
 .login {
-    background-color: #388697;
+    background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center; 
+    background-size: cover;  
+}
+
+
+.login .content {
+    background-color: #38869791;
     padding: 14rem 0rem;
 }
 
@@ -215,6 +221,12 @@ a {
     .landing .content {
         padding: 20rem 0rem;
     }
+
+    .login .content {
+        background-color: #38869791;
+        padding: 20rem 0rem;
+    }
+    
 
 
     textarea {
