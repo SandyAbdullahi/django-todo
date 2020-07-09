@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap');
+h1,h2,h3,h4,h5 {
+    font-family: 'Archivo Black', sans-serif;   
+}
+
+p,a,li,ul {
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+
+
 #div_id_user,#div_id_list {
     display: none;
 }
@@ -6,9 +18,14 @@
 /*  
 base colors:
 1. INDIGO DYE: #08415C
+1.1. INDIGO DYE T: #08415c8c
 2. MADDER LAKE: #CC2936
 3. METALLIC SEAWEED: #388697
 */
+
+#my-red {
+    color: #CC2936 !important;
+}
 
 
 
@@ -45,10 +62,24 @@ base colors:
 .landing {
     background: url('../img/payton-tuttle-5wb5-FhQ0M8-unsplash.jpg') no-repeat center;
     background-size: 35rem;
-    padding: 15rem 0rem;
-    color: #CC2936;
+    color: #388697;
 }
 
+.landing .content {
+    padding: 9rem 0rem;
+    background-color: #08415c8c;
+
+}
+
+.landing h1 {
+    font-size: 7rem;
+    color: #ffffff;
+}   
+
+.landing p {
+    line-height: 0.9;
+    font-size: 2rem;
+}
 
 
 
@@ -63,11 +94,6 @@ textarea {
     width: 80% !important;
 }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: dodgerblue;
-    font-weight: 900;
-}
 
 a {
     color: black;
