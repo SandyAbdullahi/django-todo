@@ -115,8 +115,9 @@ base colors:
 
 
 .register .content {
+    min-height: 100vh;
     background-color: #388697e8;
-    padding: 7rem 0rem;
+    padding-top: 5rem;
 }
 
 
@@ -426,6 +427,23 @@ a {
     background-color: #388697 !important;
 }
 
+@media (min-width: 768px) {
+    .landing .content {
+        padding-top: 20rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .landing .content {
+        padding-top: 30rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing .content {
+        padding-top: 20rem;
+    }
+}
 
 
 
