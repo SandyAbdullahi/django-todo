@@ -8,7 +8,15 @@ p,a,li,ul {
     font-family: 'Roboto', sans-serif; 
 }
 
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
 
+.site-content {
+    flex: 1;
+}
 
 
 #div_id_user,#div_id_list {
@@ -69,12 +77,14 @@ base colors:
 
 .landing {
     background: url('../img/payton-tuttle-5wb5-FhQ0M8-unsplash.jpg') no-repeat center;
-    background-size: 35rem;
+    background-size: cover;
     color: #388697;
 }
 
 .landing .content {
-    padding: 9rem 0rem;
+    min-height: 100vh;
+    padding-top: 20rem;
+
     background-color: #08415c8c;
 
 }
@@ -379,6 +389,8 @@ base colors:
 
 footer {
     width: 100%;
+    position: relative;
+    bottom: 0px;
 }
 textarea {
     width: 80% !important;
@@ -417,100 +429,3 @@ a {
 
 
 
-@media (min-width: 768px)  {
-    .landing {
-        background: url('../img/desk-3076954_1920.jpg') no-repeat center;
-        background-size: cover;
-        height: 100%;
-        color: #CC2936 !important;
-        
-    }
-    
-    .landing .content {
-        padding: 20rem 0rem;
-    }
-
-    .login .content {
-      
-        padding: 20rem 0rem;
-    }
-
-    .logged-out .content {
-        
-        padding: 20rem 0rem;
-    }
-    .about .content {
-
-        padding: 20rem 0rem;
-    }
-    
-    .password-change-done .content {
-
-        padding: 20rem 0rem;
-    }
-
-    .dashboard .content {
-        padding: 9rem 0rem 25rem 0rem;
-    }
-    
-    textarea {
-        width: 90% !important;
-    }
-
-
-    
-
-}
-
-
-@media (min-width: 1200px) {
-    .landing {
-        background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center;
-    }
-
-    .landing .content {
-        padding: 20rem 0rem;
-    }
-    .about .content {
-        background-color: #38869791;
-        padding: 20rem 0rem;
-    }
-}
-
-
-
-@media (min-width: 1366px) {
-    .landing .content {
-        padding: 9rem 0rem;
-    }
-
-    .about .content {
-        padding: 9rem 0rem;
-    }
-    .dashboard .content {
-        padding: 9rem 0rem 20rem 0rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    .landing {
-        background: url('../img/glacier-bay-80643_1920.jpg') no-repeat center;
-    }
-
-    .landing .content {
-        padding: 20rem 0rem;
-        background-color: #cc293670;
-    }
-    .about .content {
-        background-color: #38869791;
-        padding: 20rem 0rem;
-    }
-
-    .landing p {
-       color: #08415C;
-    }
-
-    .dashboard .content {
-        padding: 9rem 0rem 30rem 0rem;
-    }
-}

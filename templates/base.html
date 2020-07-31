@@ -24,8 +24,12 @@
   </head>
   <body>
     {% include "includes/navbar.html" %}
-    {% block content %}
-    {% endblock  %}
+    <div class="site">
+      <div class="site-content">
+        {% block content %}
+        {% endblock  %}
+      </div>
+    </div>
    {% include "includes/footer.html" %}
 
 
