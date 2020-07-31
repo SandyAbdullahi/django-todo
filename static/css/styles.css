@@ -153,7 +153,8 @@ base colors:
 
 .login .content {
     background-color: #38869791;
-    padding: 14rem 0rem;
+    min-height: 100vh;
+    padding-top: 10rem;
 }
 
 .login h1 {
@@ -187,7 +188,9 @@ base colors:
 
 .about .content {
     background-color: #388697d1;
-    padding: 11rem 0rem;
+    min-height: 100vh;
+    padding-top: 10rem;
+    color: yellow;
 }
 
 .about h1 {
@@ -205,7 +208,8 @@ base colors:
 
 .password-change .content {
     background-color: #388697d1;
-    padding: 11rem 0rem;
+    padding-top: 5rem;
+    min-height: 100vh;
 }
 
 .password-change h1 {
@@ -227,7 +231,8 @@ base colors:
 
 .password-change-done .content {
     background-color: #388697d1;
-    padding: 15rem 0rem;
+    padding-top: 10rem;
+    min-height: 100vh;
 }
 
 .password-change-done h1 {
@@ -245,7 +250,8 @@ base colors:
 
 .logged-out .content {
     background-color: #388697d1;
-    padding: 15rem 0rem;
+    padding-top: 10rem;
+    min-height: 100vh;
 }
 
 .logged-out h1 {
@@ -269,7 +275,8 @@ base colors:
 
 
 .dashboard .content {
-    padding: 9rem 0rem 20rem 0rem;
+    padding-top: 10rem;
+    min-height: 100vh;
 }
 
 .dashboard .content h1 {
@@ -307,8 +314,8 @@ base colors:
 }
 
 .list-view .content {
- 
-    padding: 3rem 0rem 3rem 0rem;
+    padding-top: 10rem;
+    min-height: 100vh;
 }
 
 .list-view .content .card {
