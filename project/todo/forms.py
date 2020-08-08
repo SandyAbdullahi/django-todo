@@ -15,7 +15,7 @@ class ListForm(forms.ModelForm):
 
 
 class ItemForm(forms.ModelForm):
-    item_name = forms.CharField(label="Item Name:", max_length=100, required=False)
+    item_name = forms.CharField(label="Item Name", max_length=100, required=False)
     item_description = forms.Textarea()
 
     class Meta:

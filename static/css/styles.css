@@ -260,9 +260,8 @@ base colors:
 
 
 /* Dashboard */
-
 .dashboard {
-    background-color: #CC2936;
+    background-color: #ddd;
 }
 .dashboard small {
     color: #CC2936;
@@ -280,7 +279,7 @@ base colors:
 }
 
 .dashboard .content h1 {
-    color: #ffffff;
+    color: #CC2936;;
 }
 .dashboard .content h1 .user {
     color: #388697;
@@ -306,7 +305,7 @@ base colors:
 /* List view */
 
 .list-view {
-    background-color: #CC2936;
+    background-color: #ddd;
     min-height: 100vh;
 }
 
@@ -347,18 +346,13 @@ base colors:
 
 /* Items */
 
-.item {
-    background-color: #CC2936;
-}
-
 .item h1 {
     color: #08415C;
 }
 
-.item .content {
-    padding: 0rem 0rem 5rem 0rem;
+.list-group-item {
+    background-color: transparent;
 }
-
 .item .content .form {
     background-color: #08415C !important;
     border-radius: 8px;
