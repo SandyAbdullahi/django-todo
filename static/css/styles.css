@@ -49,7 +49,7 @@ base colors:
 
 
 .my-nav-style a {
-    color: #388697 !important;
+    color: #388697;
 }
 
 .my-nav-style a:hover {
@@ -190,7 +190,7 @@ base colors:
     background-color: #388697d1;
     min-height: 100vh;
     padding-top: 10rem;
-    color: yellow;
+    color: yellowgreen;
 }
 
 .about h1 {
@@ -435,13 +435,22 @@ a {
     .landing .content {
         padding-top: 20rem;
     }
+    .about .content p {
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (min-width: 992px) {
     .landing .content {
         padding-top: 30rem;
     }
+
+    .about .content p {
+        font-size: 2rem;
+    }
 }
+
 
 @media (min-width: 1200px) {
     .landing .content {
